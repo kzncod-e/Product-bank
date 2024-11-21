@@ -1,12 +1,12 @@
 const Toolbar = () => {
   return (
-    <div className="flex items-center w-full justify-between gap-4 p-4 bg-[#fff] border border-gray-200  rounded-lg">
+    <div className="flex items-center w-full justify-between gap-4 p-4    rounded-lg">
       {/* Search Input */}
-      <div className="flex shadow-lg items-center border-[0.2px] border-[#C1C1C1] rounded-[5px] w-72 px-3 py-2">
+      <div className="flex  w-96 text-center items-center bg-[#fff] border-[0.2px] border-[#C1C1C1] shadow-lg rounded-[12.5px]  py-4 px-7  ">
         <input
           type="text"
           placeholder="Cari berdasarkan nama"
-          className="outline-none text-sm text-gray-700 w-48"
+          className="outline-none text-sm text-gray-700  w-full "
         />
         <button>
           <svg
@@ -25,7 +25,7 @@ const Toolbar = () => {
 
       {/* Dropdown */}
       <div className="relative">
-        <button className="flex items-center border border-gray-300 rounded-lg px-3 py-2 text-sm text-gray-700">
+        <button className="flex w-72 bg-[#fff] items-center border border-gray-300 py-4 px-7 rounded-[9px] shadow-lg font-medium text-base text-[#000]">
           Kredit Pemilikan...
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ const Toolbar = () => {
       </div>
 
       {/* Sort Button */}
-      <button className="flex items-center border border-gray-300 rounded-lg px-3 py-2 text-sm text-gray-700">
+      <button className="flex bg-[#fff] items-center border border-gray-300 shadow-lg rounded-[12.5px] w-52  py-4 px-7 text-sm text-gray-700">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-4 w-4 text-gray-500 mr-2"
@@ -58,7 +58,7 @@ const Toolbar = () => {
       </button>
 
       {/* Add Product Button */}
-      <button className="flex items-center bg-blue-500 text-white rounded-lg px-4 py-2 text-sm">
+      <button className="flex w-64 items-center bg-blue-500 text-white shadow-lg rounded-[12.5px]  py-4 px-7 text-sm">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-4 w-4 mr-2"

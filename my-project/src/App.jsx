@@ -12,8 +12,10 @@ function App() {
         <div className="flex flex-col w-full  md:ml-52 ml-0">
           <TopBar />
           <MenuBar />
-          <ProductBank />
-          <Toolbar />
+          <div className="mx-4">
+            <ProductBank />
+            <Toolbar />
+          </div>
         </div>
       </div>
     </>

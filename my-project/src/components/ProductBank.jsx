@@ -28,8 +28,8 @@ const data = [
 export default function ProductBank() {
   return (
     <>
-      <section className="w-full m-4">
-        <div className="flex gap-8  justify-center items-center">
+      <section className="w-full my-4">
+        <div className="flex gap-8  justify-between items-center">
           {data.map((el, index) => (
             <>
               <div
