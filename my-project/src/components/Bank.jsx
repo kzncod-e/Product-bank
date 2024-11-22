@@ -48,7 +48,7 @@ export default function Bank() {
                     </div>
                     {/* end bank contet */}
                     {/* bank rate */}
-                    <div className="flex  gap-6 justify-center flex-col ">
+                    <div className="flex flex-wrap  gap-6 justify-center flex-col ">
                       <div>
                         {/* Header */}
                         <h1 className="flex justify-center lg:justify-start w-full gap-1">
@@ -62,21 +62,21 @@ export default function Bank() {
                       </div>
                       <div className="flex flex-wrap       gap-8  items-end">
                         <div className="flex gap-5 flex-col">
-                          <div className="flex items-center gap-3">
+                          <div className="flex items-center flex-wrap gap-3">
                             <img src={rate} alt="" />
                             <p className=" text-[#707a83] flex gap-2 text-base">
                               {" "}
                               Fix Rate (Year):<span> {el.fixRate}</span>
                             </p>
                           </div>
-                          <div className="flex  items-center gap-3">
+                          <div className="flex  items-center flex-wrap gap-3">
                             <img src={time} alt="" />
                             <p className=" text-[#707a83] flex gap-2 text-base">
                               {" "}
                               Max Tenor:<span> {el.maxTenor}</span>
                             </p>
                           </div>
-                          <div className="flex items-center gap-3">
+                          <div className="flex items-center flex-wrap gap-3">
                             <img src={timeRate} alt="" />
                             <p className=" text-[#707a83] flex gap-2 text-base">
                               {" "}
@@ -86,7 +86,7 @@ export default function Bank() {
                         </div>
                         {/* col 2 */}
                         <div className="flex gap-5 flex-col">
-                          <div className="flex items-center gap-3">
+                          <div className="flex items-center flex-wrap gap-3">
                             <img src={shield} alt="" />
                             <p className=" text-[#707a83] flex gap-2 text-base">
                               Jaminan:
@@ -99,7 +99,7 @@ export default function Bank() {
                               </span>
                             </p>
                           </div>
-                          <div className="flex  items-center gap-3">
+                          <div className="flex  items-center flex-wrap gap-3">
                             <img src={user} alt="" />
                             <p className=" text-[#707a83] flex gap-2 text-base">
                               {" "}
@@ -113,7 +113,7 @@ export default function Bank() {
                               </span>
                             </p>
                           </div>
-                          <div className="flex items-center gap-3">
+                          <div className="flex items-center flex-wrap gap-3">
                             <img src={dolar} alt="" />
                             <p className=" text-[#707a83] flex gap-2 text-base">
                               {" "}
