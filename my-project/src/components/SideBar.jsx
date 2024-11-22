@@ -87,7 +87,7 @@ export default function SideBar() {
                   {item.hasDropdown && (
                     <img
                       src={top}
-                      className="h-2 absolute right-4"
+                      className="h-6 absolute right-4"
                       alt="Dropdown"
                     />
                   )}
