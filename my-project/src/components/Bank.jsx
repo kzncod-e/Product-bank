@@ -86,7 +86,7 @@ export default function Bank() {
                         </div>
                         {/* col 2 */}
                         <div className="flex gap-5 flex-col">
-                          <div className="flex items-center flex-wrap gap-3">
+                          <div className="flex justify-center items-center base- gap-3">
                             <img src={shield} alt="" />
                             <p className=" text-[#707a83] flex gap-2 text-base">
                               Jaminan:

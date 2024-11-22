@@ -26,7 +26,7 @@ const Toolbar = () => {
 
       {/* Dropdown */}
       <div className="relative">
-        <button className="flex w-72 bg-[#fff]  border border-gray-300 py-4 px-7 rounded-[9px] shadow-lg font-medium text-xl text-[#000]">
+        <button className="flex w-72 bg-[#fff]  border border-gray-300 py-4 px-7 rounded-[9px] items-center shadow-lg font-medium text-xl text-[#000]">
           Kredit Pemilikan...
           <svg
             xmlns="http://www.w3.org/2000/svg"

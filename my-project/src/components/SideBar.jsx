@@ -6,7 +6,8 @@ import file from "../img/File.png";
 import product from "../img/Shopping Bag.png";
 import bank from "../img/Bank Building.png";
 import scoring from "../img/Performance.png";
-import vector from "../img/Vector (2).png";
+
+import top from "../img/Group 1372.png";
 import faq from "../img/Help.png";
 import pipeline from "../img/Layers.png";
 
@@ -17,7 +18,7 @@ export default function SideBar() {
     { icon: home, label: "Dashboard", active: false },
     { icon: contact, label: "Contact", active: false },
     { icon: file, label: "Loan", active: false },
-    { icon: product, label: "Product", active: false },
+    { icon: product, label: "Product", active: false, hasDropdown: true },
     { icon: "", label: "Bank Product", active: true },
     { icon: "", label: "Product" },
     { icon: "", label: "Category Product" },
@@ -26,7 +27,6 @@ export default function SideBar() {
       icon: scoring,
       label: "Credit Scoring",
       active: false,
-      hasDropdown: true,
     },
     { icon: faq, label: "FAQ'S", active: false },
     { icon: pipeline, label: "Pipeline", active: false },
@@ -86,7 +86,7 @@ export default function SideBar() {
                   <span className="font-medium">{item.label}</span>
                   {item.hasDropdown && (
                     <img
-                      src={vector}
+                      src={top}
                       className="h-2 absolute right-4"
                       alt="Dropdown"
                     />
