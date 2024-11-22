@@ -1,5 +1,5 @@
 import { useState } from "react";
-import home from "../img/Home.png";
+import home from "../img/blackHome.png";
 import loan from "../img/image 8.png";
 import contact from "../img/Contact.png";
 import file from "../img/File.png";
@@ -9,17 +9,18 @@ import scoring from "../img/Performance.png";
 import vector from "../img/Vector (2).png";
 import faq from "../img/Help.png";
 import pipeline from "../img/Layers.png";
-import marketing from "../img/Product Management.png";
-import whatsapp from "../img/WhatsApp.png";
 
 export default function SideBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { icon: home, label: "Dashboard", active: true },
+    { icon: home, label: "Dashboard", active: false },
     { icon: contact, label: "Contact", active: false },
     { icon: file, label: "Loan", active: false },
     { icon: product, label: "Product", active: false },
+    { icon: "", label: "Bank Product", active: true },
+    { icon: "", label: "Product" },
+    { icon: "", label: "Category Product" },
     { icon: bank, label: "Bank", active: false },
     {
       icon: scoring,
@@ -30,8 +31,6 @@ export default function SideBar() {
     { icon: faq, label: "FAQ'S", active: false },
     { icon: pipeline, label: "Pipeline", active: false },
     { icon: pipeline, label: "Pipeline Developer", active: false },
-    { icon: marketing, label: "Marketing Tools", active: false },
-    { icon: whatsapp, label: "Whatsapp", active: false, hasDropdown: true },
   ];
 
   return (
@@ -70,12 +69,20 @@ export default function SideBar() {
             {menuItems.map((item, index) => (
               <li key={index}>
                 <div
-                  className={`flex items-center justify-start px-3 py-2 rounded-[10px] gap-2 ${
+                  className={`flex items-center  px-3 py-2 rounded-[10px] gap-2 ${
                     item.active
                       ? "bg-[#17A9E2] text-white"
                       : "bg-white text-black"
                   }`}>
-                  <img src={item.icon} className="h-7" alt={item.label} />
+                  {item.icon ? (
+                    <img src={item?.icon} className="h-7" />
+                  ) : (
+                    <>
+                      {" "}
+                      <p className="h-7 w-7"></p>
+                    </>
+                  )}
+
                   <span className="font-medium">{item.label}</span>
                   {item.hasDropdown && (
                     <img

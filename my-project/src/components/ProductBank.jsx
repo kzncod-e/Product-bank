@@ -29,7 +29,7 @@ export default function ProductBank() {
   return (
     <>
       <section className="w-full my-4">
-        <div className="flex gap-8  justify-between items-center">
+        <div className="flex scale-75 flex-wrap md:scale-100 xl:justify-between justify-center gap-5  items-center">
           {data.map((el, index) => (
             <>
               <div

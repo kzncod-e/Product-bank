@@ -1,17 +1,18 @@
+import sort from "../img/Alphabetical Sorting.png";
 const Toolbar = () => {
   return (
-    <div className="flex items-center w-full justify-between gap-4 p-4    rounded-lg">
+    <div className="flex flex-wrap scale-75 lg:scale-100  w-full xl:justify-between gap-4 lg:py-4 py-1 justify-center    rounded-lg">
       {/* Search Input */}
-      <div className="flex  w-96 text-center items-center bg-[#fff] border-[0.2px] border-[#C1C1C1] shadow-lg rounded-[12.5px]  py-4 px-7  ">
+      <div className="flex  w-96 text-center justify-center  bg-[#fff] border-[0.2px] border-[#C1C1C1] shadow-lg rounded-[12.5px]  py-4 px-7  ">
         <input
           type="text"
           placeholder="Cari berdasarkan nama"
-          className="outline-none text-sm text-gray-700  w-full "
+          className="outline-none text-xl text-gray-700  w-full "
         />
         <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-blue-500"
+            className="h-10 w-10 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor">
             <path
@@ -25,11 +26,11 @@ const Toolbar = () => {
 
       {/* Dropdown */}
       <div className="relative">
-        <button className="flex w-72 bg-[#fff] items-center border border-gray-300 py-4 px-7 rounded-[9px] shadow-lg font-medium text-base text-[#000]">
+        <button className="flex w-72 bg-[#fff]  border border-gray-300 py-4 px-7 rounded-[9px] shadow-lg font-medium text-xl text-[#000]">
           Kredit Pemilikan...
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 ml-2 text-gray-500"
+            className="h-10 w-10 "
             viewBox="0 0 20 20"
             fill="currentColor">
             <path
@@ -42,26 +43,16 @@ const Toolbar = () => {
       </div>
 
       {/* Sort Button */}
-      <button className="flex bg-[#fff] items-center border border-gray-300 shadow-lg rounded-[12.5px] w-52  py-4 px-7 text-sm text-gray-700">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4 text-gray-500 mr-2"
-          viewBox="0 0 20 20"
-          fill="currentColor">
-          <path
-            fillRule="evenodd"
-            d="M10 3.75a.75.75 0 01.75.75v10.69l2.22-2.22a.75.75 0 111.06 1.06l-3.5 3.5a.75.75 0 01-1.06 0l-3.5-3.5a.75.75 0 011.06-1.06l2.22 2.22V4.5a.75.75 0 01.75-.75z"
-            clipRule="evenodd"
-          />
-        </svg>
+      <button className="flex bg-[#fff] items-center border border-gray-300 shadow-lg rounded-[12.5px] w-52 gap-5 text-xl font-semibold  py-4 px-7 ">
+        <img src={sort} className="h-10" alt="" />
         Sort
       </button>
 
       {/* Add Product Button */}
-      <button className="flex w-64 items-center bg-blue-500 text-white shadow-lg rounded-[12.5px]  py-4 px-7 text-sm">
+      <button className="flex w-64  bg-blue-500 text-white shadow-lg rounded-[12.5px]  py-4 px-7 text-xl items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4 mr-2"
+          className="h-10 w-10 mr-2"
           viewBox="0 0 20 20"
           fill="currentColor">
           <path
