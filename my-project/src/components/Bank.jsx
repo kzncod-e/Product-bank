@@ -90,7 +90,7 @@ export default function Bank() {
                             <img src={shield} alt="" />
                             <p className=" text-[#707a83] flex gap-2 text-base">
                               Jaminan:
-                              <span>
+                              <span className="mr-2 flex flex-wrap">
                                 {el.jaminan.map((el, index) => (
                                   <>
                                     <span key={index}>{el}</span>
